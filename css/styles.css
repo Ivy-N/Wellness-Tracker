@@ -1,0 +1,71 @@
+.green-background {
+        background-color: #C8DF61;
+}
+.yellow-background {
+        background-color: #F0FF00;
+}
+.red-background {
+        background-color: #EA8D99;
+}
+#show-listofwellnessactivities {
+  display: none;
+}
+
+.delivery {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.delivery:hover {
+  text-decoration: underline;
+}
+
+#activitiesshowing{
+  display: none;
+  font-family:cursive;
+}
+
+#activitieshidden{
+  font-family:cursive;
+  text-align:center;
+}
+
+.clickable{
+cursor: pointer;
+color: #0088cc;
+font-weight: bold;
+}
+
+.clickable:hover{
+  text-decoration: underline;
+}
+h1{
+  text-align:center;
+  color:#7A7140;
+}
+h2{
+  background-color: #FCF7D9;
+  font-style:italic;
+  text-align:center;
+  color:#373528;
+}
+
+.pickMeUp{
+  color:#7A7140;
+}
+.imageplusmenuplusdeliveryquestion{
+  background-color: #FCF7D9;
+  padding:0;
+}
+body{
+  color: #7A7140;
+  font-weight:bold
+}
+img{
+  align: center;
+}
+
+h3 {
+  text-align:center;
+  font-family: cursive;
+}

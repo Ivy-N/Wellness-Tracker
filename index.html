@@ -1,0 +1,130 @@
+<!doctype html-5>
+<html>
+  <head>
+    <link href=css/bootstrap.css rel=stylesheet type=text/css>
+    <link href=css/styles.css rel=stylesheet type=text/css>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src=js/scripts.js></script>
+    <title>Wellness Tracker</title>
+  </head>
+
+  <body>
+     <div class="container">
+       <h1>Utulivu</h1>
+
+
+           <h2>Welcome to Utulivu Wellness Tracker</h2>
+
+           <div class=row>
+             <div id=activitieshidden>
+               <h3><span class=clickable>Click here to view examples</span> of wellness activities you can track</h3>
+             </div>
+
+             <div id=activitiesshowing>
+              <p>Have a look at some examples of wellness activities you can track. <span class=clickable>Click here</span> to hide them again</p>
+               <ul>
+                 <li>Reading</li>
+                 <li>Spending time with family and friends</li>
+                 <li>Exercise eg. Gym, Yoga, Skipping Rope, Running</li>
+                 <li>Meditation</li>
+                 <li>Physical activity classes eg. Dancing, Aerobics</li>
+                 <li>Practising a musical instrument eg. piano, guitar, saxophone, violin</li>
+                 <li>Groups with similar interests eg. attending book club</li>
+                 <li>Learning endeavors eg. computer class, public speaking class</li>
+                 <li>Positive self affirmations eg. "I love you", "I am proud of you"</li>
+                 <li>Traveling</li>
+               </ul>
+             </div>
+
+           </div>
+
+           <div class="row">
+
+             <div class=imageplusmenuplusdeliveryquestion>
+               <div class="col-md-5">
+                 <img src=images/beach.jpg alt="This is a beach">
+
+                 <div class="favouritecolour">
+                    <p>Heylo, what's your favourite colour?</p>
+
+                    <button class="btn btn-success" id="green">Green</button>
+                    <button class="btn btn-warning" id="yellow">Yellow</button>
+                    <button class="btn btn-danger" id="red">Red</button>
+                  </div>
+
+
+                 <div class= pickMeUp>
+                   <h3>Today's pick-me-up</h3>
+
+                   <button class="btn btn-primary" id="view">VIEW</button>
+                 </div>
+               </div>
+             </div>
+
+
+           <div class=col-md-6>
+           <form id="new-wellnessTrackerForm">
+
+             <div class="form-group">
+               <label for="new-name">Name</label>
+               <input type="text" class="form-control" id="new-name">
+             </div>
+
+             <div class="form-group">
+               <label for="new-grateful">Write down one thing you are grateful in the last 7 days:</label>
+               <input type="text" class="form-control" id="new-grateful">
+             </div>
+
+             <div class="form-group">
+               <label for="new-challenge">Write down one positive experience you had while confronting a challenge in the last 7 days. </label>
+               <input type="text" class="form-control" id="new-challenge">
+             </div>
+
+
+             <div id=new-wellnessActivitiesToTrack>
+               <div class=new-wellnessActivityToTrack>
+
+                 <div class="form-group">
+                   <label for="new-wellnessactivity">Wellness Activity</label>
+                   <input type="text" class="form-control new-wellnessactivity">
+                 </div>
+
+                 <div class="form-group">
+                   <label for="new-time">In the past week, how many days did you practise this activity?</label>
+                   <input type="text" class="form-control new-time">
+                 </div>
+
+               </div>
+             </div>
+
+             <span class="btn btn-primary" id="add-wellnessActivityToTrack">Another wellness activity</span>
+             <button type="submit" class="btn">Finished Tracking</button>
+           </form>
+           </div>
+         </div>
+
+         <div class=row>
+           <div class=col-md-6>
+             <h2>Wellness Details:</h2>
+             <ol id="wellnessDetails">
+
+             </ol>
+           </div>
+
+           <div class="col-md-6">
+             <div id="show-listofwellnessactivities">
+               <h2></h2>
+               <p>Wellness Activity: <span class="addressResponse"></span></p>
+               <p>Number of days practised:</p>
+               <ol id="wellnessActivitiesToTrack">
+
+               </ol>
+
+             </div>
+           </div>
+         </div>
+
+
+       </div>
+   </body>
+  </html>
