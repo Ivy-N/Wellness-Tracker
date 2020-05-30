@@ -1,13 +1,13 @@
 
     //business logic
-    function Wellnessupdate(name, address) {
+    function Wellnessupdate(name, grateful, challenge) {
       this.name = name;
       this.grateful = grateful;
       this.challenge = challenge;
       this.wellnessActivitiesToTrack=[];
     }
 
-    function Activitylist(wellnessactivity, time) {
+    function Wellnessactivitytotrack(wellnessactivity, time) {
       this.wellnessactivity = wellnessactivity;
       this.time = time;
     }
@@ -16,7 +16,7 @@
       return this.name +"is grateful for '" + this.grateful + "' Silver lining: "+ this.challenge;
     }
 
-    ActivityList.prototype.fullDetails = function() {
+    Wellnessactivitytotrack.prototype.fullDetails = function() {
       return "Wellness activity: "+ this.wellnessactivity + ". Number of days done: " + this.time;
     }
 
@@ -96,11 +96,11 @@ $("button#view").click(function() {
         $(".new-wellnessActivityToTrack").each(function() {
           var inputtedWellnessActivity = $(this).find("input.new-wellnessactivity").val();
           var inputtedTime = $(this).find("input.new-time").val();
-          var newActivitylist = new Activitylist(inputtedWellnessActivity, inputtedTime)
-          newWellnessupdate.wellnessActivitiesToTrack.push(newActivitylist)
+          var newWellnessactivitytotrack = new Wellnessactivitytotrack(inputtedWellnessActivity, inputtedTime)
+          newWellnessupdate.wellnessActivitiesToTrack.push(newWellnessactivitytotrack)
         });
 
-        $("ol#wellnessDetails").append("<li><span class='delivery'>" + newWellnessupdate.fullSummary() + "</span></li>");
+        $("ol#wellnessDetails").append("<li><span class='wellnessupdate'>" + newWellnessupdate.fullSummary() + "</span></li>");
 
         $(".wellnessupdate").last().click(function() {
           $("#show-listofwellnessactivities").show();
@@ -109,7 +109,7 @@ $("button#view").click(function() {
           $(".gratefulResponse").text(newWellnessupdate.grateful);
           $(".challengeResponse").text(newWellnessupdate.challenge);
           $("ol#wellnessActivitiesToTrack").text("");
-          newWellnessupdate.wellnessActivitiesToTrack.forEach(function(pizza) {
+          newWellnessupdate.wellnessActivitiesToTrack.forEach(function(wellnessActivityToTrack) {
             $("ol#wellnessActivitiesToTrack").append("<li>" + wellnessActivityToTrack.fullDetails() + "</li>");
           });
         });

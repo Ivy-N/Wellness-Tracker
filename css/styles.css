@@ -11,12 +11,12 @@
   display: none;
 }
 
-.delivery {
+.wellnessupdate {
   cursor: pointer;
   color: #0088cc;
 }
 
-.delivery:hover {
+.wellnessupdate:hover {
   text-decoration: underline;
 }
 
