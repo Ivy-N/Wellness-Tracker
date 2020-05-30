@@ -38,7 +38,7 @@
   });
 });
 
-//alert button
+//alert button for pick-me-up
 jQuery(document).ready(function(){
 $("button#view").click(function() {
     alert ("This too shall change.");
@@ -47,6 +47,13 @@ $("button#view").click(function() {
     alert("Here is the altar of my body becoming fluent in the closing of wounds. Look at healing, how it belongs here.- Tryphena Yeboah");
     });
   });
+
+  //alert button for food for thought
+  jQuery(document).ready(function(){
+  $("button#thought").click(function() {
+    alert ("O keep squeezing drops of the Sun || From your prayers and work and music || And from your companions' beautiful laughter|| And from the most insignificant movements || Of your own holy body. || Now, sweet one, || Be wise. || Cast all your votes for Dancing!");
+      });
+    });
 
   //for favourite color
   $(document).ready(function() {

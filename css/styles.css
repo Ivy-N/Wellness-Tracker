@@ -90,3 +90,40 @@ form{
   border: 2px solid #D18CB8;
   padding: 6px;
 }
+
+.wellnessdetailsboxmodel{
+  border: 2px solid #D18CB8;
+  padding: 6px;
+}
+
+.wellnessactivitiesboxmodel{
+  border: 2px solid #D18CB8;
+  padding: 6px;
+}
+.happinessQuote{
+  background-color: yellow;
+  width: 1280px;
+  height: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: maroon;
+  font-family:cursive;
+  font-size: 400px;
+  text-align:center;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+}
+
+.happinessQuote {
+  background-repeat: no-repeat;
+}
