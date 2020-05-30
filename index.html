@@ -11,39 +11,19 @@
   <body>
      <div class="container">
        <h1>Utulivu</h1>
+       <h2>Welcome to Utulivu Wellness Tracker</h2>
 
+       <div class=row>
+              <div class= pickMeUp>
+                <button class="btn btn-primary" id="view">VIEW TODAY'S PICK-ME-UP</button>
+              </div>
+       </div>
 
-           <h2>Welcome to Utulivu Wellness Tracker</h2>
-
-           <div class=row>
-             <div id=activitieshidden>
-               <h3><span class=clickable>Click here to view examples</span> of wellness activities you can track</h3>
-             </div>
-
-             <div id=activitiesshowing>
-              <p>Have a look at some examples of wellness activities you can track. <span class=clickable>Click here</span> to hide them again</p>
-               <ul>
-                 <li>Reading</li>
-                 <li>Spending time with family and friends</li>
-                 <li>Exercise eg. Gym, Yoga, Skipping Rope, Running</li>
-                 <li>Meditation</li>
-                 <li>Physical activity classes eg. Dancing, Aerobics</li>
-                 <li>Practising a musical instrument eg. piano, guitar, saxophone, violin</li>
-                 <li>Groups with similar interests eg. attending book club</li>
-                 <li>Learning endeavors eg. computer class, public speaking class</li>
-                 <li>Positive self affirmations eg. "I love you", "I am proud of you"</li>
-                 <li>Traveling</li>
-               </ul>
-             </div>
-
-           </div>
+       <div class=row>
+         <img src=images/rainbow.jpg alt="This is a picture of a rainbow" class="imagecenter">
+       </div>
 
            <div class="row">
-
-             <div class=imageplusmenuplusdeliveryquestion>
-               <div class="col-md-5">
-                 <img src=images/beach.jpg alt="This is a beach">
-
                  <div class="favouritecolour">
                     <p>Heylo, what's your favourite colour?</p>
 
@@ -51,69 +31,81 @@
                     <button class="btn btn-warning" id="yellow">Yellow</button>
                     <button class="btn btn-danger" id="red">Red</button>
                   </div>
+          </div>
+
+          <div class=row>
+            <div id=activitieshidden>
+              <h3>Need Ideas?<span class=clickable>Click here </span> to view examples of wellness activities you can track</h3>
+            </div>
+
+            <div id=activitiesshowing>
+             <p>Have a look at some examples of wellness activities you can track. <span class=clickable>Click here</span> to hide them again</p>
+              <ul>
+                <li>Reading</li>
+                <li>Spending time with family and friends</li>
+                <li>Exercise eg. Gym, Yoga, Skipping Rope, Running</li>
+                <li>Meditation</li>
+                <li>Physical activity classes eg. Dancing, Aerobics</li>
+                <li>Practising a musical instrument eg. piano, guitar, saxophone, violin</li>
+                <li>Groups with similar interests eg. attending book club</li>
+                <li>Learning endeavors eg. computer class, public speaking class</li>
+                <li>Positive self affirmations eg. "I love you", "I am proud of you"</li>
+                <li>Traveling</li>
+              </ul>
+            </div>
+
+          </div>
+           <div class=rowforform>
+             <form id="new-wellnessTrackerForm">
+
+               <div class="form-group">
+                 <label for="new-name">Name</label>
+                 <input type="text" class="form-control" id="new-name">
+               </div>
+
+               <div class="form-group">
+                 <label for="new-grateful">Write down one thing you are grateful in the last 7 days:</label>
+                 <input type="text" class="form-control" id="new-grateful">
+               </div>
+
+               <div class="form-group">
+                 <label for="new-challenge">Write down one positive experience you had while confronting a challenge in the last 7 days. </label>
+                 <input type="text" class="form-control" id="new-challenge">
+               </div>
 
 
-                 <div class= pickMeUp>
-                   <h3>Today's pick-me-up</h3>
+               <div id=new-wellnessActivitiesToTrack>
+                 <div class=new-wellnessActivityToTrack>
 
-                   <button class="btn btn-primary" id="view">VIEW</button>
+                   <div class="form-group">
+                     <label for="new-wellnessactivity">Wellness Activity</label>
+                     <input type="text" class="form-control new-wellnessactivity">
+                   </div>
+
+                   <div class="form-group">
+                     <label for="new-time">In the past week, how many days did you practise this activity?</label>
+                     <input type="text" class="form-control new-time">
+                   </div>
+
                  </div>
                </div>
-             </div>
 
-
-           <div class=col-md-6>
-           <form id="new-wellnessTrackerForm">
-
-             <div class="form-group">
-               <label for="new-name">Name</label>
-               <input type="text" class="form-control" id="new-name">
-             </div>
-
-             <div class="form-group">
-               <label for="new-grateful">Write down one thing you are grateful in the last 7 days:</label>
-               <input type="text" class="form-control" id="new-grateful">
-             </div>
-
-             <div class="form-group">
-               <label for="new-challenge">Write down one positive experience you had while confronting a challenge in the last 7 days. </label>
-               <input type="text" class="form-control" id="new-challenge">
-             </div>
-
-
-             <div id=new-wellnessActivitiesToTrack>
-               <div class=new-wellnessActivityToTrack>
-
-                 <div class="form-group">
-                   <label for="new-wellnessactivity">Wellness Activity</label>
-                   <input type="text" class="form-control new-wellnessactivity">
-                 </div>
-
-                 <div class="form-group">
-                   <label for="new-time">In the past week, how many days did you practise this activity?</label>
-                   <input type="text" class="form-control new-time">
-                 </div>
-
-               </div>
-             </div>
-
-             <span class="btn btn-primary" id="add-wellnessActivityToTrack">Another wellness activity</span>
-             <button type="submit" class="btn">Finished Tracking</button>
-           </form>
+               <span class="btn btn-primary" id="add-wellnessActivityToTrack">Another wellness activity</span>
+               <button type="submit" class="btn">Finished Tracking</button>
+             </form>
            </div>
-         </div>
 
          <div class=row>
-           <div class=col-md-6>
-             <h2>Wellness Details:</h2>
+           <div class=col-md-4>
+             <h4>Wellness Details:</h4>
              <ol id="wellnessDetails">
 
              </ol>
            </div>
 
-           <div class="col-md-6">
+           <div class="col-md-8">
              <div id="show-listofwellnessactivities">
-               <h2></h2>
+               <h4></h4>
                <p>Name: <span class="nameResponse"></span></p>
                <p>Grateful for: <span class="gratefulResponse"></span></p>
                <p>This is a silver lining you experienced when confronting a challenge this week: <span class="challengeResponse"></span></p>

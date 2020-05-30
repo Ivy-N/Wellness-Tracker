@@ -41,31 +41,52 @@ font-weight: bold;
 }
 h1{
   text-align:center;
-  color:#7A7140;
+  color:#613752;
 }
 h2{
-  background-color: #FCF7D9;
+  background-color: #D18CB8;
   font-style:italic;
   text-align:center;
-  color:#373528;
+  color:#613752;
+}
+h4{
+  background-color: #D18CB8;
+  font-style:italic;
+  text-align:center;
+  color:#613752;
 }
 
 .pickMeUp{
-  color:#7A7140;
+  color:#613752;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-.imageplusmenuplusdeliveryquestion{
-  background-color: #FCF7D9;
-  padding:0;
+.imagepluscolourpluspickmeup{
+  background-color: #D18CB8;
 }
 body{
-  color: #7A7140;
+  color: #613752;
   font-weight:bold
-}
-img{
-  align: center;
 }
 
 h3 {
   text-align:center;
   font-family: cursive;
+  font-weight: bold;
+}
+.imagecenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+ul {
+  text-align: center;
+}
+
+form{
+  border: 2px solid #D18CB8;
+  padding: 6px;
 }

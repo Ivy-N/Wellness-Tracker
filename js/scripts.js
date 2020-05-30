@@ -104,7 +104,7 @@ $("button#view").click(function() {
 
         $(".wellnessupdate").last().click(function() {
           $("#show-listofwellnessactivities").show();
-          $("#show-listofwellnessactivities h2").text(newWellnessupdate.fullSummary());
+          $("#show-listofwellnessactivities h4").text(newWellnessupdate.fullSummary());
           $(".nameResponse").text(newWellnessupdate.name);
           $(".gratefulResponse").text(newWellnessupdate.grateful);
           $(".challengeResponse").text(newWellnessupdate.challenge);
