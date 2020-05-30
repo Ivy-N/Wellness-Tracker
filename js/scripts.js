@@ -13,7 +13,7 @@
     }
 
     Wellnessupdate.prototype.fullSummary = function() {
-      return this.name +"is grateful for '" + this.grateful + "' Silver lining: "+ this.challenge;
+      return this.name +"'s wellness update";
     }
 
     Wellnessactivitytotrack.prototype.fullDetails = function() {
